@@ -1,6 +1,5 @@
-<h1 align="center">ISS Location Tracker <img src="https://github.com/Aditya8821/ISS-Tracker/blob/main/ISS%20Tracker/Images%20%26%20Video/iss%20symbol.png" width="80"</h1>
+<h1 align="center">ISS Location Tracker</h1>
 
-  -----------------
 <p align="center"><img src="https://github.com/Aditya8821/ISS-Tracker/blob/main/ISS%20Tracker/Images%20%26%20Video/ISS%20Image.jpg"></p>
 
 ## Description:
@@ -15,7 +14,7 @@ Some of the modules are listed below.
 This script helps to get the information about ISS that is revolving over the earth gravitational field. It helps us to know the names of onboarded crew inside it along with the current real time location in form of latitude and longitude. Then using that lat and long we have mapped that particular location in the map.
 
 - **JSON:**
-This JSOn module is used to decode a JSON document from a string that may have extraneous data at the end.
+This json module is used to decode a JSON document from a string that may have extraneous data at the end.
 
 - **Urllib.requests:**
 It offers a very simple interface, in the form of the urlopen function. This is capable of fetching URLs using a variety of different protocols.
@@ -27,14 +26,24 @@ This webbrowser module allows to open the web browser from a python script By si
 Geocoder is a simple and consistent geocoding library written in Python. Dealing with multiple different geocoding provider.
 
 ## Procedure to follow: 
-- pip install json
-- pip install turtle
-- pip install geocoder
-- pip install requests
-- pip install time
-- store api link in url variable
-- extract required data from that url and display that in txt form.
-- Use latitude and longitude real time value from extracted data and keep on update the location of ISS on map in every 5 sec.
+- Install the following modules listed below:
+```python
+  pip install turtle
+  pip install geocoder
+```
+- Modules need to import:
+```python
+  import json
+  import urllib.request 
+  import time
+  import turtle
+  import webbrowser 
+  import geocoder
+```
+
+- Store **API** link in url variable
+- Extract required data from that url and display that in **txt** form.
+- Use **latitude** and **longitude** real time value from extracted data and keep on update the location of ISS on map in every **5 sec**.
 
 ## Sample Output Crew Info:
 <p align="center"><img src="https://github.com/Aditya8821/ISS-Tracker/blob/main/ISS%20Tracker/Images%20%26%20Video/iss%20crew%20info.png"></p>
